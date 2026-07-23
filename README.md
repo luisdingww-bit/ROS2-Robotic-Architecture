@@ -26,7 +26,17 @@ Toolpath planning and G-code generation for robotic / 3D-printing fabrication of
 
 ```bash
 python toolpath_planner.py   # generates layer paths + exports sample G-code
+python examples/preview_toolpath.py   # renders docs/sample_toolpath.png
 ```
+
+## Sample output (generated)
+
+Running the planner produces a **real** G-code file and a preview image
+(committed so the repo is self-demonstrating without a robot):
+
+- [`docs/sample_toolpath.gcode`](docs/sample_toolpath.gcode) — 10-layer, 50×50 mm square toolpath (`G0`/`G1`, mm, absolute)
+- [`docs/sample_toolpath.png`](docs/sample_toolpath.png) — preview of layer 1 (contour + zigzag infill)
+- `examples/preview_toolpath.py` — regenerates the preview image
 
 ## License
 
